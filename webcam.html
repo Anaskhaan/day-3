@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webcam Access</title>
+    <script src="script.js"></script>
+    <style>
+      #videoPlayer,
+      #capturedImage {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Webcam Access</h1>
+
+    <button onclick="startWebcam()">Start Webcam</button>
+    <button onclick="stopWebcam()">Stop Webcam</button>
+    <button onclick="captureImage()">Capture Image</button>
+
+    <!-- Video element for displaying webcam stream -->
+    <video id="videoPlayer" autoplay></video>
+
+    <!-- Image element for displaying captured image -->
+    <img id="capturedImage" style="display: none" />
+
+    <script src="path/to/your/script.js" defer></script>
+  </body>
+</html>
