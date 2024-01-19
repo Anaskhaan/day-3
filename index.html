@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <h2>HTML 5 Form</h2>
+      <form action="">
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          pattern=".{8,}"
+          title="Password must be at least 8 characters long"
+          required
+        />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="quantity"
+          min="1"
+          max="100"
+          step="1"
+          value="1"
+        />
+        <input type="date" name="birthdate" required />
+        <input type="time" name="meeting-time" required />
+        <input
+          type="url"
+          name="website"
+          placeholder="https://example.com"
+          required
+        />
+        <input type="checkbox" name="subscribe" checked /> CheckBox
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <textarea
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Enter your message..."
+        ></textarea>
+        <input type="file" name="file-upload" required />
+        <input type="color" name="color" value="#ff0000" />
+        <input type="range" name="volume" min="0" max="100" value="50" />
+        <input type="search" name="search" placeholder="Search..." />
+        <label for="image">Select an image:</label>
+        <input type="file" id="image" name="image" accept="image/*" />
+        <label for="zipFile">Select a ZIP file:</label>
+        <input type="file" id="zipFile" name="zipFile" accept=".zip" />
+        <label for="videoFile">Select a video file:</label>
+        <input type="file" id="videoFile" name="videoFile" accept="video/*" />
+        <input type="submit" name="submit" id="" />
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
